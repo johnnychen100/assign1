@@ -88,7 +88,7 @@ void draw() {
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
       
-      totalScore = totalScore +m*m*60+n*n*10+o*o*20+p*p*30+q*q*40+r*r*50
+      totalScore = totalScore + m*m*60 + n*n*10 + o*o*20 + p*p*30 + q*q*40 + r*r*50
       
       
       
