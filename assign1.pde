@@ -73,6 +73,10 @@ void draw() {
       fruitIdTwo = random(6);
       fruitIdThree = random(6);
       
+      machine.setSlotFruit(0,int(fruitIdOne));
+      machine.setSlotFruit(1,int(fruitIdTwo));
+      machine.setSlotFruit(2,int(fruitIdThree));
+      
       int m = machine.getFruitCount(0);
       int n = machine.getFruitCount(1);
       int o = machine.getFruitCount(2);
@@ -80,9 +84,6 @@ void draw() {
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
       
-      machine.setSlotFruit(0,int(fruitIdOne));
-      machine.setSlotFruit(1,int(fruitIdTwo));
-      machine.setSlotFruit(2,int(fruitIdThree));
       totalScore = totalScore +m*m*60+n*n*10+o*o*20+p*p*30+q*q*40+r*r*50
       
       println(m);
