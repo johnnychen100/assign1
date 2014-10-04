@@ -76,7 +76,10 @@ void draw() {
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
       
-      
+      fruitId = random(6);
+      machine.setSlotFruit(0,fruitId);
+      machine.setSlotFruit(1,fruitId);
+      machine.setSlotFruit(2,fruitId);
       totalScore = totalScore + a + b + c
       
  
