@@ -11,7 +11,6 @@ int h = 50;
 // --------------------------------------------
 // put your code inside here
 int totalScore = 500;
-int slotPosition;
 int fruitIdOne;
 int fruitIdTwo;
 int fruitIdThree;
@@ -68,12 +67,10 @@ void draw() {
       // -------------------------------------------------
       // put your code inside here
       
-      int result = machine.probability(0.464158883); // 0.1^(1/3) = 0.464158883
       
-      
-      fruitIdOne = result*0+(1-result)*(random(5)+1);
-      fruitIdTwo = result*0+(1-result)*(random(5)+1);
-      fruitIdThree = result*0+(1-result)*(random(5)+1);
+      fruitIdOne = random(6);
+      fruitIdTwo = random(6);
+      fruitIdThree = random(6);
       
       machine.setSlotFruit(0,int(fruitIdOne));
       machine.setSlotFruit(1,int(fruitIdTwo));
