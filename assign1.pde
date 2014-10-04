@@ -67,7 +67,7 @@ void draw() {
       // -------------------------------------------------
       // put your code inside here
       
-      int result = machine.probability(0.464158883);
+      int result = machine.probability(0.464158883); // 0.1^(1/3) = 0.464158883
       
       fruitIdOne = result*0+(1-result)*(random(5)+1);
       
