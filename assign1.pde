@@ -69,16 +69,16 @@ void draw() {
       // put your code inside here
       
       
+      fruitIdOne = random(6);
+      fruitIdTwo = random(6);
+      fruitIdThree = random(6);
+      
       int m = machine.getFruitCount(0);
       int n = machine.getFruitCount(1);
       int o = machine.getFruitCount(2);
       int p = machine.getFruitCount(3);
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
-      
-      fruitIdOne = random(6);
-      fruitIdTwo = random(6);
-      fruitIdThree = random(6);
       
       machine.setSlotFruit(0,int(fruitIdOne));
       machine.setSlotFruit(1,int(fruitIdTwo));
