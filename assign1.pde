@@ -81,6 +81,7 @@ void draw() {
       machine.setSlotFruit(1,fruitId);
       machine.setSlotFruit(2,fruitId);
       totalScore = totalScore + a + b + c
+      println(totalScore);
  
  
  
