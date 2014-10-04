@@ -85,6 +85,13 @@ void draw() {
       machine.setSlotFruit(2,int(fruitIdThree));
       totalScore = totalScore +m*m*60+n*n*10+o*o*20+p*p*30+q*q*40+r*r*50
       
+      println(m);
+      println(n);
+      println(o);
+      println(p);
+      println(q);
+      println(r);
+      
  
  
  
