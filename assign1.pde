@@ -12,7 +12,9 @@ int h = 50;
 // put your code inside here
 int totalScore = 500;
 int slotPosition;
-int fruitId;
+int fruitIdOne;
+int fruitIdTwo;
+int fruitIdThree;
 
 // --------------------------------------------
 
@@ -76,7 +78,10 @@ void draw() {
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
       
-      fruitId = random(6);
+      fruitIdOne = random(6);
+      fruitIdTwo = random(6);
+      fruitIdThree = random(6);
+      
       machine.setSlotFruit(0,int(fruitId));
       machine.setSlotFruit(1,int(fruitId));
       machine.setSlotFruit(2,int(fruitId));
