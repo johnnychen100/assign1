@@ -73,7 +73,7 @@ void draw() {
       
       int result = machine.probability(0.1);
       
-      if(rresult == 0.1) {
+      if(result == 0.1) {
       machine.setSlotFruit(0,0);
       machine.setSlotFruit(1,0);
       machine.setSlotFruit(2,0);
