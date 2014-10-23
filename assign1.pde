@@ -67,19 +67,21 @@ void draw() {
       // -------------------------------------------------
       // put your code inside here
       
-      int result = machine.probability(0.464158883); // 0.1^(1/3) = 0.464158883
+      fruitIdOne = random(6);
+      fruitIdTwo = random(6);
+      fruitIdThree = random(6);
       
-      fruitIdOne = result*0+(1-result)*(random(5)+1);
+      int result = machine.probability(0.1);
       
-      result = machine.probability(0.464158883);
-      fruitIdTwo = result*0+(1-result)*(random(5)+1);
-      
-      result = machine.probability(0.464158883);
-      fruitIdThree = result*0+(1-result)*(random(5)+1);
-      
+      if(rresult == 0.1) {
+      machine.setSlotFruit(0,0);
+      machine.setSlotFruit(1,0);
+      machine.setSlotFruit(2,0);
+      } else {
       machine.setSlotFruit(0,int(fruitIdOne));
       machine.setSlotFruit(1,int(fruitIdTwo));
       machine.setSlotFruit(2,int(fruitIdThree));
+      }
       
       int m = machine.getFruitCount(0);
       int n = machine.getFruitCount(1);
@@ -88,7 +90,7 @@ void draw() {
       int q = machine.getFruitCount(4);
       int r = machine.getFruitCount(5);
       
-      totalScore = totalScore + m*m*60 + n*n*10 + o*o*20 + p*p*30 + q*q*40 + r*r*50
+      totalScore = totalScore + m*m*60 + n*n*10 + o*o*20 + p*p*30 + q*q*40 + r*r*50;
       
       
       
